@@ -1,0 +1,199 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+a{ 
+	transition: all 0.3s ease 0s; /*анимация*/
+	text-decoration: none; 
+	color: inherit; 
+}
+
+a:hover{
+	color: #a7a7a7;
+}
+
+@font-face{ /*создание семейства шрифта на сайте*/
+    font-family: Main_font;
+    src: url("../fonts/OpenSans-SemiBold.ttf"); /*относительный путь до шрифта*/
+}
+
+@font-face{ 
+    font-family: Titles;
+    src: url("../fonts/Oswald-SemiBold.ttf"); 
+}
+
+button{
+	transition: all 0.3s ease 0s; /*анимация*/
+	border: none;
+	border-radius: 10px; /*радиус закругления краёв*/
+}
+
+body{
+	font-family: Main_font; /*данное свойство применяется для всего тела сайта и соответственно наследуется всеми элементами кроме специальных, таких как кнопки*/
+}
+
+.head_max_width{
+	background-color: #123a48c4; /*цвет заднего фона*/
+	padding: 10px;
+}
+
+.head-main{
+	margin: 0 auto;
+	width: 1200px; /*ширина блока*/
+	display: flex; /*свойство flex по умолчанию выстраивает блоки вдоль горизонтальной оси*/
+	align-items: center; /*выстраивание блоков вдоль горизонтальной оси специальным образом*/
+	justify-content: space-between; /*отвечает за выравнивание элементов по главной оси:*/
+	height: 70px; /*высота блока*/
+}
+
+.logo-picture{
+	height: 80%;
+}
+
+.up-menu{
+	color: white;
+}
+
+.right-menu{
+	font-size: 22px;
+	display: flex;
+	width: 850px;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.head_button{
+	font-size: 22px;
+	padding: 5px 20px;
+	font-family: Main_font;
+}
+
+.phones{
+	display: flex;
+	flex-direction: column; /*направление главной оси для flex блоков*/
+	color: white;
+}
+
+#move_to_gallery:hover,
+#on:hover{
+	background-color: #a7a7a7;
+	cursor: pointer;
+}
+
+#off:hover{
+	color: black;
+	background-color: #a7a7a7;
+	border: 2px solid #a7a7a7;
+	cursor: pointer;
+}
+
+.background{
+	height: 100vh; /*высота берётся в процентах от высоты окна браузера*/
+	background-image: url("../img/background2.jpg");
+	background-size: cover; /*картинка масштабируется до размеров блока*/
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.background_content{
+	max-width: 1200px;
+	margin: 0 auto;
+	color: white;
+	padding: 0 10px 100px 10px;
+}
+
+.background_buttons{
+	display: flex;
+	width: 310px;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+
+#off{
+	background-color: transparent;
+	color: white;
+	border: 2px solid white;
+}
+
+.plitki{
+	max-width: 1200px;
+	margin: 40px auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+.card{
+	margin: 0 10px;
+	box-shadow: 5px 5px 5px 5px rgba(0,0,0,.1);
+	border-radius: 10px;
+}
+
+.card_img{
+	border-radius: 10px 10px 0 0;
+	object-fit: cover;
+	width: 100%;
+	height: 250px;
+}
+
+.card_text{
+	padding: 10px 20px 30px 20px;
+}
+
+.titles_cards{
+	line-height: 40px;
+	font-size: 36px;
+	font-family: Titles;
+	color: #808080;
+}
+
+.text_cards{
+	margin-top: 10px;
+}
+
+.cards_and_backgrounds{
+	background-image: url("../img/back_2.jpg");
+	background-size: cover;
+	height: 500px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding-bottom: 50px;
+}
+
+.back_1200{
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.cards_2{
+	display: flex;
+	justify-content: space-between;
+}
+
+.card_back{
+	transition: all 0.3s ease 0s; /*анимация*/
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 0 10px;
+}
+
+.backgrounds_titles{
+	padding: 20px 10px;
+}
+
+.card_b_t{
+	font-family: Titles;
+	font-size: 30px;
+}
+
+.card_back:hover{ /*данные свойства активируются только при наведении курсора на блок*/
+	background-color: white;
+	color: black;
+}
